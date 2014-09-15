@@ -10,7 +10,7 @@ Cordova.depends({
 
 Package.on_use(function (api) {
   api.use(["reactive-var"]);
-  api.versionsFrom("METEOR@0.9.2-rc0");
+  api.versionsFrom("0.9.1");
   api.add_files(["geolocation.js"], "client");
   api.export("Geolocation", "client");
 });

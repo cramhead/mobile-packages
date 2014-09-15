@@ -4,13 +4,13 @@ Package.describe({
 });
 
 Cordova.depends({
-  "org.apache.cordova.camera":"0.3.0"
+  "org.apache.cordova.camera":"0.3.1"
 });
 
 Package.onUse(function(api) {
   api.export('MeteorCamera');
   api.use(["templating", "session", "ui", "blaze", "less", "reactive-var"]);
-  api.versionsFrom("METEOR@0.9.2-rc0");
+  api.versionsFrom("0.9.1");
 
   api.addFiles('photo.html');
   api.addFiles('photo.js');
